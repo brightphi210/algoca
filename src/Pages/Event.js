@@ -1,11 +1,16 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import Sidebar from '../Components/Sidebar'
+import EvenBody from '../Components/EvenBody'
 
 const Event = () => {
   return (
     <div className='bg-zinc-100 h-screen'>
         <Navbar />
-        <h2 className='text-black'>This is Event Page</h2>
+        <div className='flex '>
+          <Sidebar />
+          <EvenBody />
+        </div>
     </div>
   )
 }

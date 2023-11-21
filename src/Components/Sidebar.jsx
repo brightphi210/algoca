@@ -1,0 +1,80 @@
+import React from 'react'
+
+import { IoIosWallet } from "react-icons/io";
+import { FiPlus } from "react-icons/fi";
+import { MdOutlineEventNote } from "react-icons/md";
+import { HiSpeakerphone } from "react-icons/hi";
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { MdAccountCircle } from "react-icons/md";
+import { ImSpinner9 } from "react-icons/im";
+
+
+
+import profile from './Images/pro.png'
+
+const Sidebar = () => {
+  return (
+    <div className='bg-white w-full h-screen pt-32 px-10'>
+        <div className='flex gap-3 items-center'>
+            <img src={profile} alt="" className='w-12 h-12' />
+            <div>
+                <p className='text-base'>algoname</p>
+                <p className='text-sm text-zinc-400'>user@email.com</p>
+            </div>
+        </div>
+
+        <div className='pt-10'>
+            <button className='flex items-center text-sm border border-blue-800 p-3 px-5 text-blue-800 rounded-full gap-3 w-full text-center'>
+                <IoIosWallet className='text-xl'/> Disconnect Wallet 
+            </button>
+
+
+            <button className='flex items-center mt-6 text-sm bg-blue-800 p-3 px-5 text-white rounded-full gap-3 w-full text-center'>
+                <FiPlus className='text-xl'/> Create Event 
+            </button>
+
+            <hr className='mt-10'/>
+        </div>
+
+
+        <div className='pt-5'>
+            <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
+                hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                <MdOutlineEventNote className='text-xl'/> Event Feed
+            </p>
+
+
+            <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
+                hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                <HiSpeakerphone className='text-xl'/> Annoncements
+            </p>
+
+
+            <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
+                hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                <FaRegCalendarAlt className='text-xl'/> Scheduled Event
+            </p>
+
+            <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
+                hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                <MdAccountCircle className='text-xl'/> My Account
+            </p>
+
+            <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
+                hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                <ImSpinner9 className='text-xl'/> Services
+            </p>
+        </div>
+
+
+
+        
+
+
+
+
+    </div>
+  )
+}
+
+export default Sidebar
