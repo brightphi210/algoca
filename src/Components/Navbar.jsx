@@ -18,7 +18,7 @@ const Navbar = () => {
 
             <div className='flex items-center bg-zinc-200 p-3'>
                 <IoIosNotificationsOutline />
-                <p className='text-lg'>Notification</p>
+                <p className=''>Notification</p>
             </div>
 
             <div className='flex items-center gap-5'>
