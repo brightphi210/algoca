@@ -13,8 +13,8 @@ const Navbar = () => {
         <div className='col-span-2 flex gap-20 items-center'>
             <h2>Algocal</h2>
             <div className='flex items-center relative'>
-                <input type="text" placeholder='Search for events here' className='bg-zinc-100 p-3 px-5 w-96 rounded-3xl'/>
-                <FiSearch   className='absolute top-4 right-8 text-xl'/>
+                <input type="text" placeholder='Search for events here' className='bg-zinc-100 p-3 px-5 w-96 rounded-3xl outline-none'/>
+                <FiSearch   className='absolute top-4 right-8 text-xl text-zinc-400'/>
             </div>
         </div>
 
