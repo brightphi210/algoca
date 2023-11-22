@@ -8,9 +8,22 @@ const EvenBody = () => {
     <div>
         <div className='pt-36 grid grid-cols-3 gap-10 px-16 items-start'>
             <div className='col-span-2 relative'>
-                <img src={mainImage} alt="" className='w-fit rounded-3xl' />
-                <p className='absolute bottom-20 left-16 text-3xl font-bold text-white'>Algorand Blockchain Education & <br /> Awareness Events.</p>
+                <div>
+                    <img src={mainImage} alt="" className='w-fit rounded-3xl' />
+                    <p className='absolute bottom-20 left-16 text-3xl font-bold text-white'>Algorand Blockchain Education & <br /> Awareness Events.</p>
+                </div>
+
+                <div className='grid grid-cols-3 items-center pt-5'>
+                    <p className='col-span-2 flex gap-3 items-center text-lg'><GoDotFill className='text-xl text-blue-800'/> Events</p>
+                    <div className='flex gap-3 items-center w-full'>
+                        <p className='bg-white p-3 px-5 rounded-3xl w-fit'>All</p>
+                        <p className='bg-white p-3 px-5 rounded-3xl w-fit'>Recents</p>
+                        <p className='bg-white p-3 px-5 rounded-3xl w-fit'>Most Important</p>
+                    </div>
+                </div>
             </div>
+ 
+
             <div className='col-span-1 '>
                 
                 <div className='bg-white rounded-3xl p-7'>
