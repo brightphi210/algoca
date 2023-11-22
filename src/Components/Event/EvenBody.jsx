@@ -7,7 +7,7 @@ import { FaShareAlt } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 
 import mainImage from '../Images/main.png'
-// import main2 from '../Images/main2.png'
+import main2 from '../Images/main2.png'
 
 const EvenBody = () => {
   return (
@@ -38,14 +38,14 @@ const EvenBody = () => {
                 </div>
 
 
-                {/* <div className='grid grid-cols-2'>
+                <div className='grid grid-cols-2'>
                     <div className='col-span-1'>
                         <img src={main2} alt="" />
                     </div>
                     <div className='col-span-1'>
                         <p>Algorand Blockchain Education & Awareness Events.</p>
                     </div>
-                </div> */}
+                </div>
             </div>
         </div>
     </div>

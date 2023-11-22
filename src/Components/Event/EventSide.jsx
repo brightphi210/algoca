@@ -9,8 +9,8 @@ const EventSide = () => {
     <div>
         <div className='fixed right-10 pt-36'>
                 
-            <div className='bg-white rounded-3xl p-7 w-80'>
-                <div className='flex gap-50 bg-zinc-100 p-4 px-8 rounded-2xl items-center'>
+            <div className='bg-white rounded-3xl p-7 w-90'>
+                <div className='flex gap-10 bg-zinc-100 p-4 px-8 rounded-2xl items-center'>
                     <p className='font-bold text-base'>Upcoming Events</p>
                     <p className='text-sm text-zinc-500'>Jan - 09 - 2023</p>
                 </div>
@@ -46,33 +46,46 @@ const EventSide = () => {
                         <div className='flex gap-5 pt-7 w-fit'>
                             <div className=' border-r-4 border-blue-700 pr-4 w-fit'>
                                 <p>10 Jan</p>
-                                <p className='text-xs text-zinc-400'>12:00pm</p>
-                                <p className='text-xs text-zinc-400'>Free</p>
+                                <p className='text-sm text-zinc-400'>12:00pm</p>
+                                <p className='text-sm text-zinc-400'>Free</p>
+                            </div>
+                            <p className='text-sm '>Algorand Blockchain Education & Awareness Events.</p>
+                        </div>
+
+                        <div className='flex gap-5 pt-7 w-fit'>
+                            <div className=' border-r-4 border-blue-700 pr-4 w-fit'>
+                                <p>10 Jan</p>
+                                <p className='text-sm text-zinc-400'>12:00pm</p>
+                                <p className='text-sm text-zinc-400'>Free</p>
                             </div>
                             <p className='text-sm '>Algorand Blockchain Education & Awareness Events.</p>
                         </div>
                     </div>
 
-                    {/* <div className=' pt-8'>
+
+                    <div className='pt-8'>
                         <p className='text-zinc-300'>This Month</p>
-                        <div className='flex gap-5 pt-7'>
-                            <div className='border-r-4 border-blue-700 pr-4 w-24'>
+                        <div className='flex gap-5 pt-7 w-fit'>
+                            <div className=' border-r-4 border-blue-700 pr-4 w-fit'>
                                 <p>10 Jan</p>
-                                <p className='text-xs text-zinc-400'>12:00pm</p>
-                                <p className='text-xs text-zinc-400'>Free</p>
+                                <p className='text-sm text-zinc-400'>12:00pm</p>
+                                <p className='text-sm text-zinc-400'>Free</p>
                             </div>
-                            <p className='text-sm'>Algorand Blockchain Education & <br /> Awareness Events.</p>
+                            <p className='text-sm '>Algorand Blockchain Education & Awareness Events.</p>
                         </div>
 
-                        <div className='flex gap-5 pt-7'>
-                            <div className='border-r-4 border-blue-700 pr-4 w-24'>
+                        <div className='flex gap-5 pt-7 w-fit'>
+                            <div className=' border-r-4 border-blue-700 pr-4 w-fit'>
                                 <p>10 Jan</p>
-                                <p className='text-xs text-zinc-400'>12:00pm</p>
-                                <p className='text-xs text-zinc-400'>Free</p>
+                                <p className='text-sm text-zinc-400'>12:00pm</p>
+                                <p className='text-sm text-zinc-400'>Free</p>
                             </div>
-                            <p className='text-sm'>Algorand Blockchain Education & Awareness Events.</p>
+                            <p className='text-sm '>Algorand Blockchain Education & Awareness Events.</p>
                         </div>
-                    </div> */}
+                    </div>                    
+                    
+
+
                 </div>
                 <hr className='mt-5'/>
             </div>

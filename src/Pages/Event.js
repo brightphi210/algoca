@@ -6,7 +6,7 @@ import EventSide from '../Components/Event/EventSide'
 
 const Event = () => {
   return (
-    <div className='bg-zinc-100 h-screen'>
+    <div className=''>
         <Navbar />
         <div className='flex '>
           <Sidebar />

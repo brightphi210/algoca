@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  background-color: #F4F4F4;
   font-family: -apple-system, BlinkMacSystemFont, 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
