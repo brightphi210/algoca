@@ -9,7 +9,7 @@ import flag from './Images/flag.png'
 
 const Navbar = () => {
   return (
-    <div className='grid grid-cols-3 px-16 py-5 bg-white items-center fixed w-screen shadow-sm'>
+    <div className='grid grid-cols-3 px-16 py-5 bg-white items-center fixed w-screen shadow-sm z-20'>
         <div className='col-span-2 flex gap-20 items-center'>
             <h2>Algocal</h2>
             <div className='flex items-center relative'>

@@ -14,7 +14,7 @@ import profile from './Images/pro.png'
 
 const Sidebar = () => {
   return (
-    <div className='bg-white w-full h-screen pt-32 px-10'>
+    <div className='bg-white w-80 h-screen pt-32 px-10 fixed z-10'>
         <div className='flex gap-3 items-center'>
             <img src={profile} alt="" className='w-12 h-12' />
             <div>
