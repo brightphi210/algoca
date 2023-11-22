@@ -16,7 +16,7 @@ const EventSide = () => {
                 </div>
 
                 <div>
-                    <ul className='flex gap-8 mt-5 text-zinc-300 justify-center'>
+                    <ul className='flex gap-9 mt-5 text-zinc-300 justify-center'>
                         <li>S</li>
                         <li>M</li>
                         <li>T</li>
@@ -62,7 +62,7 @@ const EventSide = () => {
                         </div>
                     </div>
 
-
+                    <hr className='mt-5'/>
                     <div className='pt-8'>
                         <p className='text-zinc-300'>This Month</p>
                         <div className='flex gap-5 pt-7 w-fit'>
@@ -87,7 +87,7 @@ const EventSide = () => {
 
 
                 </div>
-                <hr className='mt-5'/>
+                
             </div>
 
             <p className='pt-5 text-lg flex gap-3'> <GoDotFill className='text-xl text-blue-800 items-center'/> Algo Community</p>
