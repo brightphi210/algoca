@@ -70,11 +70,11 @@ const EvenBody = () => {
                             <div className='grid grid-cols-3 gap-3 items-end'>
 
                                 <div className='pt-5 col-span-2'>
-                                    <p className='flex gap-3 items-center pt-4 text-sm text-zinc-500'><SlCalender /> Jan - 20 - 2023</p>
-                                    <p className='flex gap-3 items-center pt-4 text-sm text-zinc-500'><SlCalender /> 03:00pm</p>
-                                    <p className='flex gap-3 items-center pt-4 text-sm text-zinc-500'><SlCalender /> Nigeria, Port Harcourt, GRA Rd</p>
-                                    <p className='flex gap-3 items-center pt-4 text-sm text-zinc-500'><SlCalender /> Virtual Call Via Google Meet</p>
-                                    <p className='flex gap-3 items-center pt-4 text-sm text-zinc-500'><SlCalender /> 3 Days Event</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> Jan - 20 - 2023</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> 03:00pm</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> Nigeria, Port Harcourt, GRA Rd</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> Virtual Call Via Google Meet</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> 3 Days Event</p>
                                     
                                 </div>
                                 <div className='col-span-1'>
@@ -83,13 +83,16 @@ const EvenBody = () => {
                                     </button>
                                 </div>
                             </div>
-                            <div className='grid grid-cols-4 gap-10 pt-6 items-center'>
+                            <div className=' grid grid-cols-4 pt-10 items-center'>
 
+                                <div className='group flex gap-3 items-center p-3 px-3 bg-zinc-100 rounded-full col-span-1 w-fit cursor-pointer '>
+                                    <FaShareAlt className='text-base z-10 text-blue-800'/>
+                                    <button className=' text-sm hidden group-hover:block text-blue-800'>share</button>
+                                </div>
 
-
-                                <div className='flex items-center p-3 px-5 bg-zinc-100 rounded-3xl col-span-1 w-fit hover:block cursor-pointer'>
-                                    <FaShareAlt className='text-base z-10'/>
-                                    <button className=' text-base hidden hover:block'>share</button>
+                                <div className='group flex gap-3 items-center p-3 px-3 bg-zinc-100 rounded-full col-span-1 w-fit cursor-pointer'>
+                                    <FaMoneyBillWaveAlt className='text-base z-10 text-blue-800'/>
+                                    <button className=' text-sm hidden group-hover:block text-blue-800'>Donate</button>
                                 </div>
 
                                 <button className='text-sm col-span-2 bg-blue-800 p-3 px-5 text-white rounded-3xl'>Add to Scheduled</button>
