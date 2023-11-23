@@ -37,7 +37,7 @@ const Navbar = () => {
       };
     
       const closeModal1 = () => {
-        setModalOpen(false);
+        setModalOpen1(false);
       };
     
       const handleOverlayClick1 = (e) => {
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <p className='text-sm'>Nigeria</p>
             </div>
 
-            <div className='flex gap-2 items-center bg-zinc-100 p-3 px-6 rounded-3xl' onClick={openModal1}>
+            <div className='flex gap-2 items-center bg-zinc-100 p-3 px-6 rounded-3xl cursor-pointer' onClick={openModal1}>
                 <IoMdNotificationsOutline  className='text-xl'/>
                 <p className='text-sm'>Notifications</p>
             </div>
@@ -74,6 +74,8 @@ const Navbar = () => {
             </div>
         </div> 
 
+
+        {/* ==================== Profile Part =============================== */}
         {modalOpen && (
         <div
           className="fixed top-0 right-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50"
@@ -115,7 +117,7 @@ const Navbar = () => {
         </div>
         )}
 
-
+        {/* ========================= Notification Part ============================= */}
         {modalOpen1 && (
         <div
           className="fixed top-0 right-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50"

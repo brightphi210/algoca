@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import { IoIosWallet } from "react-icons/io";
 import { FiPlus } from "react-icons/fi";
@@ -29,19 +30,24 @@ const Sidebar = () => {
             </button>
 
 
-            <button className='flex items-center mt-6 text-sm bg-blue-800 p-3 px-5 text-white rounded-full gap-3 w-full text-center'>
-                <FiPlus className='text-xl'/> Create Event 
-            </button>
+            <Link to={'/createEvent'}>
+                <button className='flex items-center mt-6 text-sm bg-blue-800 p-3 px-5 text-white rounded-full gap-3 w-full text-center'>
+                    <FiPlus className='text-xl'/> Create Event 
+                </button>
+            </Link>
+
 
             <hr className='mt-10'/>
         </div>
 
 
         <div className='pt-5'>
-            <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
-                hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
-                <MdOutlineEventNote className='text-xl'/> Event Feed
-            </p>
+            <Link to={'/'}>
+                <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
+                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                    <MdOutlineEventNote className='text-xl'/> Event Feed
+                </p>
+            </Link>
 
 
             <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
