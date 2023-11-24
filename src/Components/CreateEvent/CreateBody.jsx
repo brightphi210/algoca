@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { GoDotFill } from "react-icons/go";
 import { IoCloseCircleOutline } from "react-icons/io5";
@@ -7,11 +7,19 @@ import proImage from '../Images/pro.png'
 import add from '../Images/add.png'
 
 const CreateBody = () => {
+
+  const [toggle, setToggle] = useState(true)
+
+  const open =() =>{
+    setToggle(!toggle)
+  }
   return (
     <div>
         <div className='pt-36 pl-96 px-20'>
           <div className='bg-white w-fit p-10 rounded-3xl h-220'>
 
+
+            {/* ================= Evenet Details ================================== */}
             <div className=' h-200 px-5 overflow-y-scroll'>
               <p className='text-xl flex gap-2 font-semibold'> <GoDotFill className='text-2xl text-blue-800 items-center'/> Create Event</p>
               <p className='pt-14 font-semibold'> Event Details</p>
@@ -20,29 +28,33 @@ const CreateBody = () => {
                 <div className='grid grid-cols-3 items-center gap-5'>
 
                   <div className='col-span-2'>
-                    <label className='text-sm text-zinc-500 pb-5'>Event title:</label>
-                    <input type="text" className='border border-zinc-200 p-4 w-full mt-3 outline-none rounded-xl'/>
+                    <label className='text-sm text-zinc-500 pb-3 block'>Event title:</label>
+                    {/* <input type="text" className='border border-zinc-200 p-4 w-full mt-3 outline-none rounded-xl'/> */}
+                    <input type="text"  className="input input-bordered input-lg w-full max-h-14 min-h-fit flex-shrink-0" />
                   </div>
 
                   <div className='col-span-1'>
-                    <label className='text-sm text-zinc-500 pb-5'>Price:</label>
-                    <input type="text" className='border border-zinc-200 p-4 w-full mt-3 outline-none rounded-xl'/>
+                    <label className='text-sm text-zinc-500 pb-3 block'>Price:</label>
+                    {/* <input type="text" className='border border-zinc-200 p-4 w-full mt-3 outline-none rounded-xl'/> */}
+                    <input type="text"  className="input input-bordered input-lg w-full max-h-14 min-h-fit flex-shrink-0" />
                   </div>
 
                 </div>
 
                 <div className='pt-5'>
-                    <label className='text-sm text-zinc-500 pb-5'>Description:</label>
+                    <label className='text-sm text-zinc-500 pb-3 block'>Description:</label>
                     <textarea type="text" className='border border-zinc-200 p-4 min-w-full max-w-full mt-3 outline-none rounded-xl'/>
                   </div>
               </div>
 
               <hr className='my-6'/>
 
+              {/* ================= Evenet Dates ================================== */}
+
               <div className='flex gap-14'>
                   <div>
                     <p>Date Of Event</p>
-                    <div className=" w-full max-w-xs flex gap-3 pt-5">
+                    <div className=" w-full flex gap-3 pt-5">
 
                       <div>
                         <p className='text-sm text-zinc-400 pb-2 '>Year:</p>
@@ -78,7 +90,7 @@ const CreateBody = () => {
 
                   <div>
                     <p>Event Time</p>
-                    <div className=" w-full max-w-xs flex gap-3 pt-5">
+                    <div className=" w-full flex gap-3 pt-5">
 
                       <div>
                         <p className='text-sm text-zinc-400 pb-2 '>Hours:</p>
@@ -109,8 +121,8 @@ const CreateBody = () => {
                   </div>
 
                   <div>
-                    <p>Date Of Event</p>
-                    <div className=" w-full max-w-xs flex gap-3 pt-5">
+                    <p>Event Duration</p>
+                    <div className=" w-full flex gap-3 pt-5">
 
                       <div>
                           <div className="flex gap-4">
@@ -136,6 +148,9 @@ const CreateBody = () => {
               </div>
 
               <hr className='my-8'/>
+
+
+              {/* ================= Evenet Host ================================== */}
               <p className='pt-2 font-semibold'> Host</p>
 
               <div>
@@ -200,6 +215,71 @@ const CreateBody = () => {
 
               <hr className='my-8'/>
 
+
+              {/* ================= Evenet Location ================================== */}
+
+              <div className='pb-5'>
+                <div className='grid grid-cols-4 items-center '>
+                  <p className='col-span-3 font-semibold'>Location (Hosting From)</p>
+
+                  <div className='flex items-center gap-4 col-span-1'>
+                    <p className='text-sm text-zinc-500'>Virtual Event</p>
+                    <input type="checkbox" className="toggle" onClick={open}/>
+                  </div>
+                </div>
+
+                {toggle ? 
+                (<>
+                    <div className='flex w-full gap-5 items-center pt-5'>
+                      <div >
+                        <p className='pb-3 text-sm'>Country:</p>
+                        <select className="select select-bordered select-lg w-full max-h-14 min-h-fit">
+                          <option >Nigeria</option>
+                          <option>South Africa</option>
+                          <option>Ghana</option>
+                          <option>Togo</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <p className='pb-3 text-sm'>City:</p>
+                        <input type="text"  className="input input-bordered input-lg max-h-14 min-h-fit flex-shrink-0" />
+                      </div>
+
+                      <div>
+                        <p className='pb-3 text-sm'>Address:</p>
+                        <input type="text"  className="input input-bordered input-lg w-96 max-h-14 min-h-fit flex-shrink-0" />
+                      </div>
+                    </div>
+                </>) : 
+                (<>
+                    <div className='pt-5'>
+                      <p className='pb-3 text-sm'>Virtual Event Link:</p>
+                      <input type="text"  className="input input-bordered input-lg w-full max-h-14 min-h-fit flex-shrink-0" />
+                    </div>
+                </>)}
+
+
+
+              </div>
+
+              <hr className='my-8'/>
+
+
+              {/* ================= Evenet Other Links ================================== */}
+
+              <div className='pb-10'>
+                <p className='font-semibold'>Other Links</p>
+
+                <div className='pt-5'>
+                  <p className='pb-3 text-sm'>Web Link1:</p>
+                  <div className='flex items-center gap-4'>
+                      <input type="text"  className="input input-bordered input-lg max-h-14 min-h-fit flex-shrink-0" />
+                    <img src={add} alt="" className='w-14 cursor-pointer'/>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
 
