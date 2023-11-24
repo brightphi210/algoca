@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import { GoDotFill } from "react-icons/go";
 import { IoCloseCircleOutline } from "react-icons/io5";
+import { SlClose } from "react-icons/sl";
 
 import proImage from '../Images/pro.png'
 import add from '../Images/add.png'
@@ -10,20 +11,39 @@ const CreateBody = () => {
 
   const [toggle, setToggle] = useState(true)
 
+  const [links, setlinks] = useState([
+    {link: ""},
+  ])
+
   const open =() =>{
     setToggle(!toggle)
   }
+
+
+
+  const handleAdd = (e) => {
+    e.preventDefault();
+    setlinks([...links, {link: ""}])
+  }
+
+  const handleRemove = (e) => {
+    const list = [...links];
+    list.splice(e, 1)
+    setlinks(list)
+  }
+
+
   return (
     <div>
         <div className='pt-36 pl-96 px-20'>
           <div className='bg-white w-fit p-10 rounded-3xl h-220'>
 
 
-            {/* ================= Evenet Details ================================== */}
             <div className=' h-200 px-5 overflow-y-scroll'>
               <p className='text-xl flex gap-2 font-semibold'> <GoDotFill className='text-2xl text-blue-800 items-center'/> Create Event</p>
               <p className='pt-14 font-semibold'> Event Details</p>
 
+            {/* ================= Evenet Details ================================== */}
               <div className='py-6'>
                 <div className='grid grid-cols-3 items-center gap-5'>
 
@@ -46,6 +66,7 @@ const CreateBody = () => {
                     <textarea type="text" className='border border-zinc-200 p-4 min-w-full max-w-full mt-3 outline-none rounded-xl'/>
                   </div>
               </div>
+
 
               <hr className='my-6'/>
 
@@ -176,12 +197,75 @@ const CreateBody = () => {
                     <IoCloseCircleOutline className='text-xl text-zinc-500'/>
 
                   </div>
+
                   <div>
-                    <img src={add} alt="" className='w-16 cursor-pointer'/>
+                    <img src={add} alt="" className='w-16 cursor-pointer' onClick={()=>document.getElementById('my_modal_2').showModal()}/>
                   </div>
 
                   </div>
                 </div>
+
+                <dialog id="my_modal_2" className="modal">
+                  <div className="modal-box">
+
+                    <h3 className="font-bold text-lg pb-5">Select Speaker!</h3>
+                    <input type="text" placeholder="Search speakers here" className="input input-bordered input-md w-full mb-6" />
+
+                    <hr className='border-zinc-100'/>
+                    <div className='flex items-center py-3'>
+                      <div className='flex gap-3 items-center'>
+                        <img src={proImage} alt="" className='w-10'/>
+                        <p>User Name</p>
+                      </div>
+                        <input type="radio" name="radio-2" className="radio radio-primary ml-auto w-5 h-5 p-0" />
+                    </div>
+
+                    <hr className='border-zinc-100'/>
+
+                    <div className='flex items-center py-3'>
+                      <div className='flex gap-3 items-center'>
+                        <img src={proImage} alt="" className='w-10'/>
+                        <p>User Name</p>
+                      </div>
+                        <input type="radio" name="radio-2" className="radio radio-primary ml-auto w-5 h-5 p-0" />
+                    </div>
+
+                    <hr className='border-zinc-100'/>
+
+                    <div className='flex items-center py-3'>
+                      <div className='flex gap-3 items-center'>
+                        <img src={proImage} alt="" className='w-10'/>
+                        <p>User Name</p>
+                      </div>
+                        <input type="radio" name="radio-2" className="radio radio-primary ml-auto w-5 h-5 p-0" />
+                    </div>
+
+                    <hr className='border-zinc-100'/>
+
+                    <div className='flex items-center py-3'>
+                      <div className='flex gap-3 items-center'>
+                        <img src={proImage} alt="" className='w-10'/>
+                        <p>User Name</p>
+                      </div>
+                        <input type="radio" name="radio-2" className="radio radio-primary ml-auto w-5 h-5 p-0" />
+                    </div>
+
+                    <hr className='border-zinc-100'/>
+
+                    <div className='flex gap-3 pt-5'>
+                      <button className="btn btn-active btn-primary rounded-3xl px-10 bg-blue-800 text-white" >Add</button>
+                      {/* <button className="btn btn-neutral rounded-3xl px-10 text-zinc-700 bg-blue-800 border-none hover:bg-zinc-200">Add</button> */}
+                    </div>
+                  
+                  </div>
+
+
+                  <form method="dialog" className="modal-backdrop">
+                    <button>close</button>
+                  </form>
+
+                </dialog>
+
 
                 <div>
                   <p className='text-sm text-zinc-600 py-5'>Guest Speakers:</p>
@@ -205,6 +289,7 @@ const CreateBody = () => {
                     <IoCloseCircleOutline className='text-xl text-zinc-500'/>
 
                   </div>
+
                   <div>
                     <img src={add} alt="" className='w-16 cursor-pointer'/>
                   </div>
@@ -265,18 +350,32 @@ const CreateBody = () => {
 
               <hr className='my-8'/>
 
-
               {/* ================= Evenet Other Links ================================== */}
 
               <div className='pb-10'>
                 <p className='font-semibold'>Other Links</p>
 
                 <div className='pt-5'>
-                  <p className='pb-3 text-sm'>Web Link1:</p>
-                  <div className='flex items-center gap-4'>
-                      <input type="text"  className="input input-bordered input-lg max-h-14 min-h-fit flex-shrink-0" />
-                    <img src={add} alt="" className='w-14 cursor-pointer'/>
-                  </div>
+
+                {links.map((item, index) => (
+                  <>
+                    <p className='pb-3 text-sm'>Web Link1:</p>
+                    <div className='flex items-center gap-4'>
+                        <div className='flex gap-4 items-center'>
+                          <input type="text"  className="input input-bordered input-lg w-96 max-h-14 min-h-fit flex-shrink-0" />
+                          {links.length > 1 && (
+                            <SlClose className='text-xl text-zinc-400 cursor-pointer' onClick={handleRemove}/>
+                          )}
+                        </div>
+
+                        { links.length -1 === index && links.length < 10 && (
+
+                        <img src={add} alt="" className='w-14 cursor-pointer' onClick={handleAdd}/>
+                        )}
+                    </div>
+                  </>
+                ))}
+  
                 </div>
 
               </div>
