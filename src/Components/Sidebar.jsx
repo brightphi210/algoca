@@ -64,10 +64,14 @@ const Sidebar = () => {
                 </p>
             </Link>
 
-            <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
-                hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
-                <MdAccountCircle className='text-xl'/> My Account
-            </p>
+            <Link to={'/account'}>
+                <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
+                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                    <MdAccountCircle className='text-xl'/> My Account
+                </p>
+            </Link>
+
+
 
             <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
                 hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
