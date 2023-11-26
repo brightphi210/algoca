@@ -71,8 +71,8 @@ const Navbar = () => {
 
 
   return (
-    <div className='flex px-16 py-5 bg-white items-center fixed w-screen shadow-sm z-20 max-sm:px-8'>
-        <div className='flex gap-20 items-center'>
+    <div className='flex px-16 py-5 bg-white items-center fixed w-screen shadow-sm z-20 max-sm:px-5'>
+        <div className='flex gap-20 items-center max-sm:gap-3'>
             <Link to={'/'}><h2>Algocal</h2></Link>
             <div className='flex items-center relative max-sm:hidden'>
                 <input type="text" placeholder='Search for events here' className='bg-zinc-100 p-3 px-5 w-100 rounded-3xl outline-none text-sm'/>
@@ -88,7 +88,7 @@ const Navbar = () => {
 
             
             <div onClick={handleOpenSearch}>
-                <FiSearch className='hidden max-sm:text-2xl max-sm:block'/>
+                <FiSearch className='hidden max-sm:text-xl max-sm:block'/>
             </div>
 
             {openSearch && (
@@ -103,10 +103,10 @@ const Navbar = () => {
         
 
 
-            <img src={flag} alt="" className='hidden w-6 h-6 max-sm:w-full max-sm:block' />
+            <img src={flag} alt="" className='hidden w-5 h-5 max-sm:w-full max-sm:block' />
 
             <div className='flex gap-2 items-center bg-zinc-100 p-3 px-6 rounded-3xl cursor-pointer max-sm:px-2 max-sm:p-2' onClick={openModal1}>
-                <IoMdNotificationsOutline  className='text-xl max-sm:base'/>
+                <IoMdNotificationsOutline  className='text-xl max-sm:text-sm'/>
                 <p className='text-sm max-sm:hidden'>Notifications</p>
             </div>
 
