@@ -4,13 +4,24 @@ import Sidebar from '../Components/Sidebar'
 import EvenBody from '../Components/Event/EvenBody'
 import EventSide from '../Components/Event/EventSide'
 
+import { useState } from 'react'
+
 const Event = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+
   return (
     <div className='bg-zinc-50'>
-        <Navbar />
+        <Navbar isOpen={menuOpen} toggleMenu={toggleMenu}/>
         <div className='flex '>
-          {/* <Sidebar />
-          <EvenBody />
+          {menuOpen && <Sidebar />}
+          {/* <Sidebar /> */}
+          {/* <EvenBody />
           <EventSide /> */}
         </div>
     </div>

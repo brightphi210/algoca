@@ -10,12 +10,13 @@ import { GoDotFill } from "react-icons/go";
 import { GoDot } from "react-icons/go";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { IoIosSend } from "react-icons/io";
+import { IoCloseOutline } from "react-icons/io5";
 
 import proImage from './Images/pro.png'
 import flag from './Images/flag.png'
 
 
-const Navbar = () => {
+const Navbar = ({ isOpen, toggleMenu }) => {
 
     const [modalOpen, setModalOpen] = useState(false);
     const [modalOpen1, setModalOpen1] = useState(false);
@@ -69,7 +70,6 @@ const Navbar = () => {
       };
 
 
-
   return (
     <div className='flex px-16 py-5 bg-white items-center fixed w-screen shadow-sm z-20 max-sm:px-5'>
         <div className='flex gap-20 items-center max-sm:gap-3'>
@@ -95,8 +95,8 @@ const Navbar = () => {
 
                 <div className="fixed top-0 right-0 w-full h-full flex items-center justify-center " onClick={handleOverlayClick3}>
                     <div className='bg-white absolute top-0 w-full p-3 px-5 flex  gap-2'>
-                        <input type="text" placeholder="Type here" className="input input-bordered w-full" />
-                        <button className='bg-zinc-100 px-4 rounded-lg'><IoIosSend className='text-violet-900 text-2xl'/></button>
+                        <input type="text" placeholder="Search something here" className="input input-bordered w-full max-sm:h-10" />
+                        <button className='bg-zinc-100 px-3 rounded-lg'><IoIosSend className='text-violet-900 text-2xl'/></button>
                     </div>
                 </div>
             )}
@@ -116,8 +116,15 @@ const Navbar = () => {
             </div>
             <img src={proImage} alt="" className='hidden w-7 h-7 max-sm:block' onClick={openModal}/>
 
-            <div className='max-sm:pl-5'>
+            <div className='max-sm:pl-5' onClick={toggleMenu}>
+
+                {isOpen ? (
+
+                    <IoCloseOutline className='hidden max-sm:text-2xl max-sm:block'/>
+                ): (
+
                 <HiMenuAlt2 className='hidden max-sm:text-2xl max-sm:block'/>
+                )}
             </div>
         </div> 
 
