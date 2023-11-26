@@ -116,7 +116,7 @@ const Navbar = () => {
             </div>
             <img src={proImage} alt="" className='hidden w-7 h-7 max-sm:block' onClick={openModal}/>
 
-            <div className='pl-10'>
+            <div className='max-sm:pl-5'>
                 <HiMenuAlt2 className='hidden max-sm:text-2xl max-sm:block'/>
             </div>
         </div> 
@@ -172,28 +172,17 @@ const Navbar = () => {
           onClick={handleOverlayClick1}
         >
           <div className="bg-white p-5 py-10 absolute right-10 top-28 max-sm:relative w-fit rounded-3xl transition-transform 
-            transform h-fit max-sm:right-0 max-sm:w-full max-sm:top-0 max-sm:mx-5">
-            <p className='text-center text-2xl font-semibold flex max-sm:text-lg'><GoDotFill className='text-blue-600'/> Notifications</p>
+            transform h-fit max-sm:right-0 max-sm:w-full max-sm:top-0 max-sm:mx-3">
+            <p className='text-center text-2xl font-semibold flex max-sm:text-lg max-sm:items-center'><GoDotFill className='text-blue-600 '/> Notifications</p>
 
-            <div className='h-200 overflow-y-scroll max-sm:h-170'>
-                <div className='p-5 px-10 pl-4 mt-4'>
+            <div className='h-200 overflow-y-scroll max-sm:h-150'>
+                <div className='p-5 px-10 pl-4 mt-4 max-sm:px-3'>
                     <p className='text-xs text-zinc-400'>This Week</p>
                     <div>
                         <div className='pt-5 flex gap-3 items-start pb-5'>
                             <GoDot className='text-blue-700 text-lg'/>
                             <div>
                                 <p className=' text-sm text-zinc-700 max-sm:text-xs'> Donation  algoname has donated $50 to the algo</p>
-                                <p className='text-xs text-zinc-500 pt-2'>01 jan 2023</p>
-                            </div>
-                        </div>
-                        <hr />
-                    </div>
-
-                    <div>
-                        <div className='pt-5 flex gap-3 items-start pb-5'>
-                            <GoDot className='text-blue-700 text-lg'/>
-                            <div>
-                                <p className=' text-sm text-zinc-700 max-sm:text-xs '> Donation  algoname has donated $50 to the algo </p>
                                 <p className='text-xs text-zinc-500 pt-2'>01 jan 2023</p>
                             </div>
                         </div>
@@ -237,17 +226,6 @@ const Navbar = () => {
                         <hr />
                     </div>
 
-                    <div>
-                        <div className='pt-5 flex gap-3 items-start pb-5'>
-                            <GoDot className='text-blue-700 text-lg'/>
-                            <div>
-                                <p className=' text-sm text-zinc-700 max-sm:text-xs'> Donation  algoname has donated $50 to the algo </p>
-                                <p className='text-xs text-zinc-500 pt-2'>01 jan 2023</p>
-                            </div>
-                        </div>
-                        <hr />
-                    </div>
-
                 </div>
 
                 <div className='p-5 px-10 pl-4 mt-4'>
@@ -274,20 +252,9 @@ const Navbar = () => {
                         <hr />
                     </div>
 
-                    <div>
-                        <div className='pt-5 flex gap-3 items-start pb-5'>
-                            <GoDot className='text-blue-700 text-lg'/>
-                            <div>
-                                <p className=' text-sm text-zinc-700 max-sm:text-xs'> Donation  algoname has donated $50 to the algo </p>
-                                <p className='text-xs text-zinc-500 pt-2'>01 jan 2023</p>
-                            </div>
-                        </div>
-                        <hr />
-                    </div>
-
                 </div>
 
-                <p className='text-center text-zinc-400 text-lg pt-5'>No more notifications</p>
+                <p className='text-center text-zinc-400 text-lg pt-5 max-sm:text-sm max-sm:pt-2'>No more notifications</p>
             </div>
 
           </div>
