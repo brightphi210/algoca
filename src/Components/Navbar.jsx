@@ -125,12 +125,12 @@ const Navbar = () => {
         {/* ==================== Profile Part =============================== */}
         {modalOpen && (
         <div
-          className="fixed top-0 right-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50"
+          className="fixed top-0 right-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50 "
           onClick={handleOverlayClick}
         >
-          <div className="bg-white p-3 py-10 absolute right-10 top-28 w-fit rounded-3xl transition-transform transform">
-            <img src={proImage} alt=""  className='w-32 m-auto'/>
-            <p className='text-center text-lg font-semibold'>algoname</p>
+          <div className="bg-white p-3 py-10 absolute right-10 top-28 w-fit max-sm:w-72 rounded-3xl transition-transform transform">
+            <img src={proImage} alt=""  className='w-32 m-auto max-sm:w-16'/>
+            <p className='text-center text-lg font-semibold max-sm:text-sm'>algoname</p>
 
             <div className='p-5 px-10 pl-4 mt-10  border border-zinc-100 rounded-2xl'>
                 <p className='text-xs text-zinc-400'>Synced gmail account:</p>
@@ -142,8 +142,8 @@ const Navbar = () => {
                 <div className="flex flex-col pt-5">
                     <div className="form-control ">
                         <label className="cursor-pointer label gap-4">
-                        <span className="label-text text-sm">Push notifications to email</span> 
-                        <input type="checkbox" className="toggle toggle-primary bg-zinc-300 border border-zinc-300 text-sm"  />
+                        <span className="label-text text-sm max-sm:text-xs">Push notifications to email</span> 
+                        <input type="checkbox" className="toggle toggle-primary bg-zinc-300 border border-zinc-300 text-xs"  />
                         </label>
                     </div>
                     <div className="form-control ">
