@@ -128,7 +128,8 @@ const Navbar = () => {
           className="fixed top-0 right-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50 "
           onClick={handleOverlayClick}
         >
-          <div className="bg-white p-3 py-10 absolute right-10 top-28 w-fit max-sm:w-full max-sm:right-0 max-sm:relative max-sm:top-0 max-sm:mx-10 rounded-3xl transition-transform transform">
+          <div className="bg-white p-3 py-10 absolute right-10 top-28 w-fit max-sm:w-full max-sm:right-0 
+            max-sm:relative max-sm:top-0 max-sm:mx-5 rounded-3xl transition-transform transform">
             <img src={proImage} alt=""  className='w-32 m-auto max-sm:w-16'/>
             <p className='text-center text-lg font-semibold max-sm:text-sm'>algoname</p>
 
