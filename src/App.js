@@ -7,6 +7,7 @@ import CreateEvent from "./Pages/CreateEvent";
 import Announcement from "./Pages/Announcement";
 import ScheduledEvent from "./Pages/ScheduledEvent";
 import Account from "./Pages/Account";
+import Services from "./Pages/Services";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/announcement" element={<Announcement />}></Route>
           <Route path="/scheduledEvent" element={<ScheduledEvent />}></Route>
           <Route path="/account" element={<Account />}></Route>
+          <Route path="/services" element={<Services />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

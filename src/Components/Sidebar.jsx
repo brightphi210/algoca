@@ -72,11 +72,13 @@ const Sidebar = () => {
             </Link>
 
 
-
+        <Link to={'/services'}>
             <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
                 hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
                 <ImSpinner9 className='text-xl'/> Services
             </p>
+        </Link>
+
             
         </div>
 

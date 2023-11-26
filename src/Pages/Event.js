@@ -9,9 +9,9 @@ const Event = () => {
     <div className='bg-zinc-50'>
         <Navbar />
         <div className='flex '>
-          <Sidebar />
+          {/* <Sidebar />
           <EvenBody />
-          <EventSide />
+          <EventSide /> */}
         </div>
     </div>
   )
