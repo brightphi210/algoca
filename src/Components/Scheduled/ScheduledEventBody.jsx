@@ -270,9 +270,6 @@ const ScheduledEventBody = () => {
                 </div>
             )
             }
-
-
-
         </div>
     </div>
   )

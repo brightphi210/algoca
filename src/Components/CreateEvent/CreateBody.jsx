@@ -380,9 +380,6 @@ const CreateBody = () => {
 
               </div>
             </div>
-
-
-
           </div >
         </div>
     </div>
