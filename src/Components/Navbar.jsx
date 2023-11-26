@@ -149,13 +149,13 @@ const Navbar = () => {
                     </div>
                     <div className="form-control ">
                         <label className="cursor-pointer label gap-4">
-                        <span className="label-text text-sm">Sync with google calendar</span> 
+                        <span className="label-text text-sm max-sm:text-xs">Sync with google calendar</span> 
                         <input type="checkbox" className="toggle toggle-primary bg-zinc-300 border border-zinc-300 text-sm"  />
                         </label>
                     </div>
                     <div className="form-control ">
                         <label className="cursor-pointer label gap-4">
-                        <span className="label-text text-sm">Display email to public</span> 
+                        <span className="label-text text-sm max-sm:text-xs">Display email to public</span> 
                         <input type="checkbox" className="toggle toggle-primary bg-zinc-300 border border-zinc-300 text-sm"  />
                         </label>
                     </div>
