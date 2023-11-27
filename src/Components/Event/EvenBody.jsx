@@ -65,7 +65,7 @@ const EvenBody = () => {
 
 
                 {/* ========================== This is First Event Div Card ===================================== */}
-                <div className=' my-10 bg-white p-5 rounded-3xl max-sm:w-full max-sm:px-3 max-sm:p-0 border-zinc-100 shadow-md'>
+                <div className=' my-10 bg-white p-5 rounded-3xl max-sm:w-full max-sm:px-3 max-sm:p-0 border-zinc-100 max-sm:shadow-md'>
 
                     <div className="collapse-title text-xl font-medium flex gap-8 max-sm:block max-sm:w-full max-sm:px-3 max-sm:py-5">
 
@@ -177,7 +177,7 @@ const EvenBody = () => {
 
             <div className='ml-auto'>
                 
-                <div className='bg-white rounded-3xl p-7 w-90 max-sm:w-fit max-sm:px-4 max-sm:rounded-xl'>
+                <div className='bg-white rounded-3xl p-7 w-90 max-sm:w-fit max-sm:px-4 max-sm:rounded-3xl max-sm:shadow-md'>
                     <div className='flex gap-10 bg-zinc-100 p-4 px-8 rounded-2xl items-center max-sm:gap-4'>
                         <p className='font-bold text-base max-sm:text-xs'>Upcoming Events</p>
                         <p className='text-sm text-zinc-500 max-sm:text-xs max-sm:ml-auto'>Jan - 09 - 2023</p>
