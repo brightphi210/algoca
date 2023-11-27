@@ -14,7 +14,7 @@ const ScheduledEvent = () => {
 
 
   return (
-    <div className='bg-zinc-100'>
+    <div className='bg-zinc-100 max-sm:h-full'>
         <Navbar isOpen={menuOpen} toggleMenu={toggleMenu}/>
         <div className='flex '>
           {menuOpen && <Sidebar />}
