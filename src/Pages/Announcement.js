@@ -13,7 +13,7 @@ const Announcement = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <div className='bg-zinc-50 max-sm:h-full'>
+    <div className='bg-zinc-100 max-sm:h-full'>
         <Navbar isOpen={menuOpen} toggleMenu={toggleMenu}/>
         <div className='flex '>
           {menuOpen && <Sidebar />}

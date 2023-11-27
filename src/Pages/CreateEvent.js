@@ -13,7 +13,7 @@ const CreateEvent = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <div className='bg-zinc-50 h-screen max-sm:h-full max-sm:bg-white'>
+    <div className='bg-zinc-100 h-screen max-sm:h-full max-sm:bg-white'>
         <Navbar isOpen={menuOpen} toggleMenu={toggleMenu}/>
         <div className='flex '>
         {menuOpen && <Sidebar />}

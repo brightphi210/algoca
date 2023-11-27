@@ -5,7 +5,7 @@ import ServicesBody from '../Components/Services/ServicesBody'
 
 const Services = () => {
   return (
-    <div className='bg-zinc-50'>
+    <div className='bg-zinc-100'>
     <Navbar />
     <div className='flex '>
       <Sidebar />

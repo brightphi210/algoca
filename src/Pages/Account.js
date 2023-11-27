@@ -5,7 +5,7 @@ import AccountBody from '../Components/Account/AccountBody'
 
 const Account = () => {
   return (
-    <div className='bg-zinc-50'>
+    <div className='bg-zinc-100'>
         <Navbar />
         <div className='flex '>
           <Sidebar />

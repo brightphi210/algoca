@@ -16,7 +16,7 @@ const Event = () => {
 
 
   return (
-    <div className='bg-zinc-50'>
+    <div className='bg-zinc-100'>
         <Navbar isOpen={menuOpen} toggleMenu={toggleMenu}/>
         <div className='flex '>
           {menuOpen && <Sidebar />}
