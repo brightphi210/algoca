@@ -348,20 +348,21 @@ const CreateBody = () => {
                 {links.map((item, index) => (
                   <>
                     <p className='py-3 text-sm max-sm:text-xs'>Web Link1:</p>
-                    <div className='flex items-center gap-4 max-sm:block max-sm:w-full'>
-                        <div className='flex gap-4 items-center w-fit max-sm:flex'>
-                          <input type="text"  className="input input-bordered input-lg max-h-14 min-h-fit flex-shrink-0 max-sm:w-full" />
-                          {links.length > 1 && (
+                    <div className='items-center gap-4 max-sm:block max-sm:w-full'>
+                        <input type="text"  className="input input-bordered input-lg xw-full max-h-14 min-h-fit flex-shrink-0 max-sm:w-full" />
+
+                        <div className='flex pt-3 items-center gap-4'>
+                        {links.length > 1 && (
                             <div>
                               <SlClose className='text-xl text-zinc-400 cursor-pointer ' onClick={handleRemove}/>
                             </div>
                           )}
-                        </div>
 
                         { links.length -1 === index && links.length < 10 && (
 
-                        <img src={add} alt="" className='w-14 cursor-pointer max-sm:pt-4 max-sm:w-10' onClick={handleAdd}/>
+                        <img src={add} alt="" className='w-14 cursor-pointer  max-sm:w-10' onClick={handleAdd}/>
                         )}
+                        </div>
 
                     </div>
                   </>
