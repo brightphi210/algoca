@@ -15,23 +15,23 @@ import profile from './Images/pro.png'
 
 const Sidebar = () => {
   return (
-    <div className='bg-white w-80 h-screen pt-32 px-10 fixed z-10 max-sm:w-full max-sm:bg-slate-400 max-sm:fixed'>
+    <div className='bg-white w-80 h-screen pt-32 px-10 fixed z-10 max-sm:w-full  max-sm:fixed'>
         <div className='flex gap-3 items-center'>
             <img src={profile} alt="" className='w-12 h-12' />
             <div>
-                <p className='text-base'>algoname</p>
+                <p className='text-base  max-sm:text-sm'>algoname</p>
                 <p className='text-sm text-zinc-400'>user@email.com</p>
             </div>
         </div>
 
         <div className='pt-10'>
-            <button className='flex items-center text-sm border border-blue-800 p-3 px-5 text-blue-800 rounded-full gap-3 w-full text-center'>
+            <button className='flex items-center text-sm border border-blue-800 p-3 px-5 text-blue-800 rounded-full gap-3 w-full text-center max-sm:text-sm max-sm:w-56'>
                 <IoIosWallet className='text-xl'/> Disconnect Wallet 
             </button>
 
 
             <Link to={'/createEvent'}>
-                <button className='flex items-center mt-6 text-sm bg-blue-800 p-3 px-5 text-white rounded-full gap-3 w-full text-center'>
+                <button className='flex items-center mt-6 text-sm bg-blue-800 p-3 px-5 text-white rounded-full gap-3 w-full text-center max-sm:text-sm max-sm:w-56'>
                     <FiPlus className='text-xl'/> Create Event 
                 </button>
             </Link>
@@ -44,14 +44,14 @@ const Sidebar = () => {
         <div className='pt-5'>
             <Link to={'/'}>
                 <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
-                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer max-sm:text-sm'>
                     <MdOutlineEventNote className='text-xl'/> Event Feed
                 </p>
             </Link>
 
             <Link to={'/announcement'}>
                 <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
-                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer max-sm:text-sm'>
                     <HiSpeakerphone className='text-xl'/> Annoncements
                 </p>
             </Link>
@@ -59,14 +59,14 @@ const Sidebar = () => {
 
             <Link to={'/scheduledEvent'}>
                 <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
-                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer max-sm:text-sm'>
                     <FaRegCalendarAlt className='text-xl'/> Scheduled Event
                 </p>
             </Link>
 
             <Link to={'/account'}>
                 <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
-                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                    hover:p-3 transition-all duration-300 ease-in-out cursor-pointer max-sm:text-sm'>
                     <MdAccountCircle className='text-xl'/> My Account
                 </p>
             </Link>
@@ -74,7 +74,7 @@ const Sidebar = () => {
 
         <Link to={'/services'}>
             <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
-                hover:p-3 transition-all duration-300 ease-in-out cursor-pointer'>
+                hover:p-3 transition-all duration-300 ease-in-out cursor-pointer max-sm:text-sm'>
                 <ImSpinner9 className='text-xl'/> Services
             </p>
         </Link>
