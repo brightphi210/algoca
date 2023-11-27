@@ -151,6 +151,48 @@ const AccountBody = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="collapse-title text-xl font-medium flex gap-8 my-5 p-8 bg-white rounded-3xl w-full max-sm:block max-sm:p-5">
+
+                    <div className=' cursor-pointer' onClick={handleShow}>
+                        <img src={main2} alt="" className='rounded-3xl' width={500}/>
+                    </div>
+
+                    <div className=''>
+                        <p className='text-lg text-blue-950 font-semibold max-sm:text-sm max-sm:pt-3'>Algorand Blockchain Education & Awareness Events.</p>
+                        <div className='items-end'>
+
+                            <div className='pt-4'>
+                                <p className='flex gap-3 items-center pt-5  text-xs text-zinc-500 max-sm:pt-3'><SlCalender /> Jan - 20 - 2023</p>
+                                <p className='flex gap-3 items-center pt-5  text-xs text-zinc-500 max-sm:pt-3'><SlCalender /> 03:00pm</p>
+                                <p className='flex gap-3 items-center pt-5  text-xs text-zinc-500 max-sm:pt-3'><SlCalender /> Nigeria, Port Harcourt, GRA Rd</p>
+                                <p className='flex gap-3 items-center pt-5  text-xs text-zinc-500 max-sm:pt-3'><SlCalender /> Virtual Call Via Google Meet</p>
+                                <p className='flex gap-3 items-center pt-5 text-xs text-zinc-500 max-sm:pt-3'><SlCalender /> 3 Days Event</p>
+                                
+                            </div>
+                        </div>
+                        <div className=' flex gap-4 pt-10 items-center max-sm:gap-2'>
+
+                            <button className='bg-zinc-100 p-2 px-6 text-xs rounded-3xl text-blue-800 max-sm:px-4'>
+                                    Price: <span className='text-sm '>$Free</span>
+                            </button>
+
+                            <div className='group flex gap-3 items-center p-3 px-3 bg-zinc-100 rounded-full col-span-1 w-fit cursor-pointer '>
+                                <FaShareAlt className='text-base z-10 text-blue-800 max-sm:text-xs'/>
+                            </div>
+
+                            <div className='group flex gap-3 items-center p-3 px-3 bg-zinc-100 rounded-full col-span-1 w-fit cursor-pointer'>
+                                <FaMoneyBillWaveAlt className='text-base z-10 text-blue-800 max-sm:text-xs'/>
+                            </div>
+
+                            <div className='group flex gap-3 items-center p-3 px-3 bg-zinc-100 rounded-full col-span-1 w-fit cursor-pointer'>
+                                <MdDelete className='text-base z-10 text-blue-800 max-sm:text-xs'/>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className='max-sm:bg-white rounded-3xl h-200 overflow-y-scroll px-5 max-sm:p-5 hidden max-sm:block max-sm:pt-4'>
