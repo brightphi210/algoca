@@ -15,7 +15,7 @@ import profile from './Images/pro.png'
 
 const Sidebar = () => {
   return (
-    <div className='bg-white w-80 h-screen pt-32 px-10 fixed z-10 max-sm:w-full  max-sm:fixed max-sm:h-screen max-sm:z-30'>
+    <div className='bg-white w-80 h-screen pt-32 px-10 fixed z-10 max-sm:w-full max-sm:pt-28  max-sm:fixed max-sm:h-screen max-sm:z-30'>
         <div className='flex gap-3 items-center'>
             <img src={profile} alt="" className='w-12 h-12' />
             <div>
@@ -37,11 +37,11 @@ const Sidebar = () => {
             </Link>
 
 
-            <hr className='mt-10'/>
+            <hr className='mt-10 max-sm:mt-5'/>
         </div>
 
 
-        <div className='pt-5'>
+        <div className='pt-5 max-sm:p-1'>
             <Link to={'/'}>
                 <p className='flex gap-3 items-center py-3 my-4 text-zinc-500 hover:bg-zinc-100 hover:text-blue-800 
                     hover:p-3 transition-all duration-300 ease-in-out cursor-pointer max-sm:text-sm'>
