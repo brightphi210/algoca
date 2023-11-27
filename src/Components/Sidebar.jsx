@@ -25,13 +25,13 @@ const Sidebar = () => {
         </div>
 
         <div className='pt-10'>
-            <button className='flex items-center text-sm border border-blue-800 p-3 px-5 text-blue-800 rounded-full gap-3 w-full text-center max-sm:text-sm max-sm:w-56'>
+            <button className='flex items-center text-sm border border-blue-800 p-3 px-4 text-blue-800 rounded-full gap-3 w-full text-center max-sm:text-sm max-sm:w-52'>
                 <IoIosWallet className='text-xl'/> Disconnect Wallet 
             </button>
 
 
             <Link to={'/createEvent'}>
-                <button className='flex items-center mt-6 text-sm bg-blue-800 p-3 px-5 text-white rounded-full gap-3 w-full text-center max-sm:text-sm max-sm:w-56'>
+                <button className='flex items-center mt-6 text-sm bg-blue-800 p-3 px-4 text-white rounded-full gap-3 w-full text-center max-sm:text-sm max-sm:w-52'>
                     <FiPlus className='text-xl'/> Create Event 
                 </button>
             </Link>
