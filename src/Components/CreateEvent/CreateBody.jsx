@@ -35,8 +35,8 @@ const CreateBody = () => {
 
   return (
     <div>
-        <div className='pt-36 pl-96 px-20 max-sm:px-5 max-sm:w-screen max-sm:pt-24 max-sm:h-full'>
-          <div className='bg-white w-fit p-10 rounded-3xl h-220 max-sm:w-full max-sm:block max-sm:px-2 max-sm:h-fit'>
+        <div className='pt-36 pl-96 px-20 max-sm:px-2 max-sm:w-screen max-sm:pt-24 max-sm:h-full'>
+          <div className='bg-white w-fit p-10 rounded-3xl h-220 max-sm:w-full max-sm:block max-sm:px-0 max-sm:h-fit'>
 
 
             <div className=' h-200 px-5 overflow-y-scroll max-sm:h-fit max-sm:overflow-hidden max-sm:w-full'>
