@@ -20,9 +20,11 @@ const Event = () => {
         <Navbar isOpen={menuOpen} toggleMenu={toggleMenu}/>
         <div className='flex '>
           {menuOpen && <Sidebar />}
-          {/* <Sidebar /> */}
-          {/* <EvenBody />
-          <EventSide /> */}
+          <div className='max-sm:hidden'>
+            <Sidebar />
+          </div>
+          <EvenBody />
+          {/* <EventSide /> */}
         </div>
     </div>
   )
