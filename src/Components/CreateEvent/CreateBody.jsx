@@ -349,7 +349,7 @@ const CreateBody = () => {
                   <>
                     <p className='py-3 text-sm'>Web Link1:</p>
                     <div className='flex items-center gap-4 max-sm:block max-sm:w-full'>
-                        <div className='flex gap-4 items-center w-fit max-sm:block'>
+                        <div className='flex gap-3 items-center w-fit max-sm:block'>
                           <input type="text"  className="input input-bordered input-lg max-h-14 min-h-fit flex-shrink-0 max-sm:w-full" />
                           {links.length > 1 && (
                             <div>
