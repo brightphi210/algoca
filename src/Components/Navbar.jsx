@@ -71,7 +71,7 @@ const Navbar = ({ isOpen, toggleMenu }) => {
 
 
   return (
-    <div className='flex px-16 py-5 bg-white items-center fixed w-screen shadow-sm z-20 max-sm:px-10 max-sm:z-20'>
+    <div className='flex px-16 py-5 bg-white items-center fixed w-screen shadow-sm z-20 max-sm:px-6 max-sm:z-20'>
         <div className='flex gap-20 items-center max-sm:gap-3'>
             <Link to={'/'}><h2>Algocal</h2></Link>
             <div className='flex items-center relative max-sm:hidden'>
