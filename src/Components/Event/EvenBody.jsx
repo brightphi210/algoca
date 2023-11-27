@@ -37,73 +37,73 @@ const EvenBody = () => {
       };
   return (
     <div>
-        <div className='pt-36 flex pl-96 px-20 gap-10 max-sm:block max-sm:px-5 py-10 max-sm:w-full max-sm:pt-28'>
+        <div className='pt-36 flex pl-96 px-20 gap-10 max-sm:block max-sm:px-6 py-10 max-sm:w-full max-sm:pt-28'>
             <div className='px-5 max-sm:p-0 '>
                 <div className='relative'>
                     <div className='w-fit h-fit max-'>
-                        <img src={mainImage} alt="" className='rounded-3xl max-sm:w-full max-sm:h-56' />
+                        <img src={mainImage} alt="" className='rounded-3xl max-sm:w-full max-sm:h-48' />
                     </div>
-                    <div className='absolute bottom-14 left-14'>
+                    <div className='absolute bottom-14 left-14 max-sm:left-5 max-sm:bottom-5'>
                         <p className=' text-3xl font-bold text-white max-sm:text-base'>Algorand Blockchain Education & <br /> Awareness Events.</p>
                         <div className='flex gap-4 pt-5'>
-                            <p className='flex gap-3 bg-zinc-600 p-3 px-4 text-white items-center text-center rounded-3xl'><IoIosStar className='text-lg'/> Sponsored</p>
-                            <p className='bg-zinc-600 p-3 px-4 text-white items-center text-center rounded-3xl'><FaShareAlt className='text-lg'/></p>
-                            <p className='bg-zinc-600 p-3 px-4 text-white items-center text-center rounded-3xl'><FaLink className='text-lg'/></p>
+                            <p className='flex gap-3 bg-zinc-600 p-3 px-4 max-sm:p-2 max-sm:px-3 text-white items-center text-center rounded-3xl max-sm:text-xs'><IoIosStar className='text-lg max-sm:text-sm'/> Sponsored</p>
+                            <p className='bg-zinc-600 p-3 px-4 max-sm:p-2 max-sm:px-2 text-white items-center text-center rounded-3xl'><FaShareAlt className='text-lg max-sm:text-sm'/></p>
+                            <p className='bg-zinc-600 p-3 px-4 max-sm:p-2 max-sm:px-3 text-white items-center text-center rounded-3xl '><FaLink className='text-lg max-sm:text-sm'/></p>
                         </div>
                     </div>
                 </div>
 
                 <div className='grid grid-cols-2 items-center pt-5 justify-center max-sm:block'>
-                    <p className='col-span-1 flex gap-3 items-center text-lg'><GoDotFill className='text-xl text-blue-800'/> Events</p>
-                    <div className='flex gap-5 items-center w-full justify-center'>
-                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs'>All</p>
-                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs'>Recents</p>
-                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs'>Most Important</p>
+                    <p className='col-span-1 flex gap-3 items-center text-lg max-sm:gap-2 max-sm:text-sm'><GoDotFill className='text-xl max-sm:text-sm text-blue-800'/> Events</p>
+                    <div className='flex gap-5 items-center w-full justify-center max-sm:gap-2 max-sm:justify-start max-sm:pt-2'>
+                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs max-sm:px-4 max-sm:rounded-lg'>All</p>
+                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs max-sm:px-4 max-sm:rounded-lg'>Recents</p>
+                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs max-sm:px-4 max-sm:rounded-lg'>Most Important</p>
                     </div>
                 </div>
 
 
 
                 {/* ========================== This is First Event Div Card ===================================== */}
-                <div className=' my-10 bg-white p-5 rounded-3xl max-sm:w-full'>
+                <div className=' my-10 bg-white p-5 rounded-3xl max-sm:w-full max-sm:px-3 max-sm:p-0'>
 
-                    <div className="collapse-title text-xl font-medium grid grid-cols-2 gap-8 max-sm:block max-sm:w-full">
+                    <div className="collapse-title text-xl font-medium flex gap-8 max-sm:block max-sm:w-full max-sm:px-3 max-sm:py-5">
 
-                        <div className='col-span-1 cursor-pointer' onClick={handleToggle}>
-                            <img src={main2} alt="" className='rounded-3xl'/>
+                        <div className=' cursor-pointer ' onClick={handleToggle}>
+                            <img src={main2} alt="" className='rounded-3xl w-200 '/>
                         </div>
 
-                        <div className='col-span-1'>
-                            <p className='text-2xl text-blue-950 font-semibold'>Algorand Blockchain Education & Awareness Events.</p>
+                        <div className=''>
+                            <p className='text-2xl text-blue-950 font-semibold max-sm:text-base max-sm:pt-5'>Algorand Blockchain Education & Awareness Events.</p>
                             <div className='grid grid-cols-3 gap-3 items-end max-sm:block'>
 
-                                <div className='pt-5 col-span-2'>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> Jan - 20 - 2023</p>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> 03:00pm</p>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> Nigeria, Port Harcourt, GRA Rd</p>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> Virtual Call Via Google Meet</p>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500'><SlCalender /> 3 Days Event</p>
+                                <div className='pt-5 col-span-2 max-sm:pt-2'>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> Jan - 20 - 2023</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> 03:00pm</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> Nigeria, Port Harcourt, GRA Rd</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> Virtual Call Via Google Meet</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> 3 Days Event</p>
                                     
                                 </div>
                                 <div className='col-span-1'>
-                                    <button className='bg-zinc-100 p-2 px-6 text-xs rounded-3xl text-blue-800'>
-                                        Price: <span className='text-base '>$Free</span>
+                                    <button className='bg-zinc-100 p-2 px-6 text-xs rounded-3xl text-blue-800 max-sm:mt-3'>
+                                        Price: <span className='text-base max-sm:text-sm'>$Free</span>
                                     </button>
                                 </div>
                             </div>
-                            <div className=' grid grid-cols-4 pt-10 items-center'>
+                            <div className=' grid grid-cols-4 pt-10 items-center max-sm:flex max-sm:gap-3 max-sm:pt-4'>
 
                                 <div className='group flex gap-3 items-center p-3 px-3 bg-zinc-100 rounded-full col-span-1 w-fit cursor-pointer '>
-                                    <FaShareAlt className='text-base z-10 text-blue-800'/>
-                                    <button className=' text-sm hidden group-hover:block text-blue-800'>share</button>
+                                    <FaShareAlt className='text-base z-10 text-blue-800 max-sm:text-sm'/>
+                                    <button className=' text-sm hidden group-hover:block text-blue-800 max-sm:group-hover:hidden'>share</button>
                                 </div>
 
                                 <div className='group flex gap-3 items-center p-3 px-3 bg-zinc-100 rounded-full col-span-1 w-fit cursor-pointer'>
-                                    <FaMoneyBillWaveAlt className='text-base z-10 text-blue-800'/>
-                                    <button className=' text-sm hidden group-hover:block text-blue-800'>Donate</button>
+                                    <FaMoneyBillWaveAlt className='text-base z-10 text-blue-800 max-sm:text-sm'/>
+                                    <button className=' text-sm hidden group-hover:block text-blue-800 max-sm:group-hover:hidden'>Donate</button>
                                 </div>
 
-                                <button className='text-sm col-span-2 bg-blue-800 p-3 px-5 text-white rounded-3xl'>Add to Scheduled</button>
+                                <button className='text-sm col-span-2 bg-blue-800 p-3 px-5 text-white rounded-3xl max-sm:text-xs'>Add to Scheduled</button>
                             </div>
                         </div>
                     </div>
