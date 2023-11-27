@@ -117,7 +117,7 @@ const CreateBody = () => {
                   </div>
 
                   <div>
-                    <p className='max-sm:text-sm pt-7'>Event Time</p>
+                    <p className='max-sm:text-sm max-sm:pt-7'>Event Time</p>
                     <div className=" w-full flex gap-3 pt-5 max-sm:pt-3">
 
                       <div>
@@ -349,8 +349,8 @@ const CreateBody = () => {
                   <>
                     <p className='py-3 text-sm'>Web Link1:</p>
                     <div className='flex items-center gap-4 max-sm:block max-sm:w-full'>
-                        <div className='flex gap-4 items-center w-fit'>
-                          <input type="text"  className="input input-bordered input-lg w-96 max-h-14 min-h-fit flex-shrink-0 max-sm:w-fit" />
+                        <div className='flex gap-4 items-center w-fit max-sm:block'>
+                          <input type="text"  className="input input-bordered input-lg max-h-14 min-h-fit flex-shrink-0 max-sm:w-full" />
                           {links.length > 1 && (
                             <div>
                               <SlClose className='text-xl text-zinc-400 cursor-pointer ' onClick={handleRemove}/>
@@ -362,6 +362,8 @@ const CreateBody = () => {
 
                         <img src={add} alt="" className='w-14 cursor-pointer max-sm:pt-4' onClick={handleAdd}/>
                         )}
+
+  
                     </div>
                   </>
                 ))}
