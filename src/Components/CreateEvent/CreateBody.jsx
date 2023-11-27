@@ -360,10 +360,9 @@ const CreateBody = () => {
 
                         { links.length -1 === index && links.length < 10 && (
 
-                        <img src={add} alt="" className='w-14 cursor-pointer max-sm:pt-4' onClick={handleAdd}/>
+                        <img src={add} alt="" className='w-14 cursor-pointer max-sm:pt-4 max-sm:w-10' onClick={handleAdd}/>
                         )}
 
-  
                     </div>
                   </>
                 ))}
