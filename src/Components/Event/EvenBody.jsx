@@ -37,11 +37,11 @@ const EvenBody = () => {
       };
   return (
     <div>
-        <div className='pt-36 flex pl-96 px-20 gap-10 max-sm:block max-sm:px-6 py-10 max-sm:w-full max-sm:pt-28'>
+        <div className='pt-36 flex pl-96 px-20 gap-10 max-sm:block max-sm:px-6 py-10 max-sm:w-full max-md:w-full max-lg:w-full max-sm:pt-28 max-md:block max-lg:block'>
             <div className='px-5 max-sm:p-0 '>
                 <div className='relative'>
-                    <div className='w-fit h-fit max-'>
-                        <img src={mainImage} alt="" className='rounded-3xl max-sm:w-full max-sm:h-48' />
+                    <div className='w-fit h-fit '>
+                        <img src={mainImage} alt="" className='rounded-3xl max-sm:w-full max-sm:h-48 max-md:w-full max-lg:w-full' />
                     </div>
                     <div className='absolute bottom-14 left-14 max-sm:left-5 max-sm:bottom-5'>
                         <p className=' text-3xl font-bold text-white max-sm:text-base'>Algorand Blockchain Education & <br /> Awareness Events.</p>

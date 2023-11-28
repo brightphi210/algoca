@@ -18,13 +18,13 @@ const Event = () => {
   return (
     <div className='bg-zinc-100'>
         <Navbar isOpen={menuOpen} toggleMenu={toggleMenu}/>
-        {/* <div className='flex '>
+        <div className='flex '>
           {menuOpen && <Sidebar />}
-          <div className='max-sm:hidden'>
+          <div className='max-sm:hidden max-md:block max-lg:block'>
             <Sidebar />
           </div>
           <EvenBody />
-        </div> */}
+        </div>
     </div>
   )
 }
