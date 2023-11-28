@@ -80,10 +80,10 @@ const Navbar = ({ isOpen, toggleMenu }) => {
             </div>
         </div>
 
-        <div className='flex gap-8 items-center max-sm:gap-4 ml-auto max-md:gap-4'>
-            <div className='flex gap-3 bg-zinc-100 p-3 px-6 rounded-3xl max-sm:hidden max-md:hidden max-lg:hidden'>
+        <div className='flex gap-8 items-center max-sm:gap-4 ml-auto max-md:gap-4 max-2xl:gap-4'>
+            <div className='flex gap-3 bg-zinc-100 p-3 px-6 rounded-3xl max-sm:hidden max-md:hidden max-lg:hidden items-center max-2xl:p-2 max-2xl:px-4'>
                 <img src={flag} alt="" className='w-6 h-6 max-sm:w-full ' />
-                <p className='text-sm max-sm:hidden'>Nigeria</p>
+                <p className='text-sm max-sm:hidden max-2xl:text-xs'>Nigeria</p>
             </div>
 
             
