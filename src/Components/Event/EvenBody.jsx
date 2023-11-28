@@ -44,7 +44,7 @@ const EvenBody = () => {
                         <img src={mainImage} alt="" className='rounded-3xl max-sm:w-full max-sm:h-48 max-md:w-full max-lg:w-full' />
                     </div>
                     <div className='absolute bottom-14 left-14 max-sm:left-5 max-sm:bottom-5'>
-                        <p className=' text-3xl font-bold text-white max-sm:text-base'>Algorand Blockchain Education & <br /> Awareness Events.</p>
+                        <p className=' text-3xl font-bold text-white max-sm:text-base max-2xl:text-sm'>Algorand Blockchain Education & <br /> Awareness Events.</p>
                         <div className='flex gap-4 pt-5'>
                             <p className='flex gap-3 bg-zinc-600 p-3 px-4 max-sm:p-2 max-sm:px-3 text-white items-center text-center rounded-3xl max-sm:text-xs'><IoIosStar className='text-lg max-sm:text-sm'/> Sponsored</p>
                             <p className='bg-zinc-600 p-3 px-4 max-sm:p-2 max-sm:px-2 text-white items-center text-center rounded-3xl'><FaShareAlt className='text-lg max-sm:text-sm'/></p>
