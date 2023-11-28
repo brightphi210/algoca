@@ -53,36 +53,36 @@ const EvenBody = () => {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-2 items-center pt-5 justify-center max-sm:block'>
-                    <p className='col-span-1 flex gap-3 items-center text-lg max-sm:gap-2 max-sm:text-sm'><GoDotFill className='text-xl max-sm:text-sm text-blue-800'/> Events</p>
-                    <div className='flex gap-5 items-center w-full justify-center max-sm:gap-2 max-sm:justify-start max-sm:pt-2'>
-                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs max-sm:px-4 max-sm:rounded-lg'>All</p>
-                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs max-sm:px-4 max-sm:rounded-lg'>Recents</p>
-                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs max-sm:px-4 max-sm:rounded-lg'>Most Important</p>
+                <div className='grid grid-cols-2 items-center pt-5 justify-center max-sm:block max-2xl:flex'>
+                    <p className='col-span-1 flex gap-3 items-center text-lg max-sm:gap-2 max-sm:text-sm'><GoDotFill className='text-xl max-sm:text-sm text-blue-800 max-2xl:text-sm'/> Events</p>
+                    <div className='flex gap-5 items-center w-full justify-center max-sm:gap-2 max-sm:justify-start max-sm:pt-2 max-2xl:gap-3'>
+                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs max-sm:px-4 max-sm:rounded-lg max-2xl:text-xs'>All</p>
+                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs max-sm:px-4 max-sm:rounded-lg max-2xl:text-xs'>Recents</p>
+                        <p className='bg-white p-3 px-8 rounded-3xl text-sm max-sm:text-xs max-sm:px-4 max-sm:rounded-lg max-2xl:text-xs'>Most Important</p>
                     </div>
                 </div>
 
 
 
                 {/* ========================== This is First Event Div Card ===================================== */}
-                <div className=' my-10 bg-white p-5 rounded-3xl max-sm:w-full max-sm:px-3 max-sm:p-0 border-zinc-100 max-sm:shadow-md'>
+                <div className=' my-10 bg-white p-5 rounded-3xl max-sm:w-full max-sm:px-3 max-sm:p-0 border-zinc-100 max-sm:shadow-md max-2xl:p-3'>
 
-                    <div className="collapse-title text-xl font-medium flex gap-8 max-sm:block max-sm:w-full max-sm:px-3 max-sm:py-5">
+                    <div className="collapse-title text-xl font-medium flex gap-8 max-2xl:gap-5 max-sm:block max-sm:w-full max-sm:px-3 max-sm:py-5 max-2xl:px-4">
 
                         <div className=' cursor-pointer ' onClick={handleToggle}>
-                            <img src={main2} alt="" className='rounded-3xl w-200 '/>
+                            <img src={main2} alt="" className='rounded-3xl w-200 max-2xl:w-170'/>
                         </div>
 
-                        <div className=''>
-                            <p className='text-2xl text-blue-950 font-semibold max-sm:text-base max-sm:pt-5'>Algorand Blockchain Education & Awareness Events.</p>
-                            <div className='grid grid-cols-3 gap-3 items-end max-sm:block'>
+                        <div className='max-2xl:w-full'>
+                            <p className='text-2xl text-blue-950 font-semibold max-sm:text-base max-sm:pt-5 max-2xl:text-sm'>Algorand Blockchain Education & Awareness Events.</p>
+                            <div className='grid grid-cols-3 gap-3 items-end max-sm:block max-2xl:block'>
 
                                 <div className='pt-5 col-span-2 max-sm:pt-2'>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> Jan - 20 - 2023</p>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> 03:00pm</p>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> Nigeria, Port Harcourt, GRA Rd</p>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> Virtual Call Via Google Meet</p>
-                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3'><SlCalender /> 3 Days Event</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3 max-2xl:text-xs max-2xl:pt-3'><SlCalender /> Jan - 20 - 2023</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3 max-2xl:text-xs max-2xl:pt-3'><SlCalender /> 03:00pm</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3 max-2xl:text-xs max-2xl:pt-3'><SlCalender /> Nigeria, Port Harcourt, GRA Rd</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3 max-2xl:text-xs max-2xl:pt-3'><SlCalender /> Virtual Call Via Google Meet</p>
+                                    <p className='flex gap-3 items-center pt-6 text-sm text-zinc-500 max-sm:text-xs max-sm:pt-3 max-2xl:text-xs max-2xl:pt-3'><SlCalender /> 3 Days Event</p>
                                     
                                 </div>
                                 <div className='col-span-1'>
@@ -91,19 +91,19 @@ const EvenBody = () => {
                                     </button>
                                 </div>
                             </div>
-                            <div className=' grid grid-cols-4 pt-10 items-center max-sm:flex max-sm:gap-3 max-sm:pt-4'>
+                            <div className=' grid grid-cols-4 pt-10 items-center max-sm:flex max-sm:gap-3 max-sm:pt-4 max-2xl:flex max-2xl:gap-2'>
 
                                 <div className='group flex gap-3 items-center p-3 px-3 bg-zinc-100 rounded-full col-span-1 w-fit cursor-pointer '>
-                                    <FaShareAlt className='text-base z-10 text-blue-800 max-sm:text-sm'/>
-                                    <button className=' text-sm hidden group-hover:block text-blue-800 max-sm:group-hover:hidden'>share</button>
+                                    <FaShareAlt className='text-base z-10 text-blue-800 max-sm:text-sm max-2xl:text-xs'/>
+                                    <button className=' text-sm hidden group-hover:block text-blue-800 max-sm:group-hover:hidden max-2xl:group-hover:hidden'>share</button>
                                 </div>
 
                                 <div className='group flex gap-3 items-center p-3 px-3 bg-zinc-100 rounded-full col-span-1 w-fit cursor-pointer'>
-                                    <FaMoneyBillWaveAlt className='text-base z-10 text-blue-800 max-sm:text-sm'/>
-                                    <button className=' text-sm hidden group-hover:block text-blue-800 max-sm:group-hover:hidden'>Donate</button>
+                                    <FaMoneyBillWaveAlt className='text-base z-10 text-blue-800 max-sm:text-sm max-2xl:text-xs'/>
+                                    <button className=' text-sm hidden group-hover:block text-blue-800 max-sm:group-hover:hidden max-2xl:group-hover:hidden'>Donate</button>
                                 </div>
 
-                                <button className='text-sm col-span-2 bg-blue-800 p-3 px-5 text-white rounded-3xl max-sm:text-xs'>Add to Scheduled</button>
+                                <button className='text-sm col-span-2 bg-blue-800 p-3 px-5 text-white rounded-3xl max-sm:text-xs max-2xl:text-xs max-2xl:px-3'>Add to Scheduled</button>
                             </div>
                         </div>
                     </div>
