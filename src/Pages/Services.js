@@ -17,7 +17,7 @@ const Services = () => {
           <div className='max-sm:hidden'>
             <Sidebar />
           </div>
-      {/* <ServicesBody /> */}
+      <ServicesBody />
     </div>
 </div>
   )
