@@ -71,24 +71,24 @@ const Navbar = ({ isOpen, toggleMenu }) => {
 
 
   return (
-    <div className='flex px-16 py-5 bg-white items-center fixed w-screen shadow-sm z-20 max-sm:px-6 max-sm:z-40'>
-        <div className='flex gap-20 items-center max-sm:gap-3'>
-            <Link to={'/'}><h2>Algocal</h2></Link>
-            <div className='flex items-center relative max-sm:hidden'>
-                <input type="text" placeholder='Search for events here' className='bg-zinc-100 p-3 px-5 w-100 rounded-3xl outline-none text-sm'/>
+    <div className='flex px-16 py-5 bg-white items-center fixed w-screen shadow-sm z-20 max-sm:px-6 max-sm:z-40 max-md:px-6'>
+        <div className='flex gap-20 items-center max-sm:gap-3 max-md:gap-3'>
+            <Link to={'/'}><h2>Algocal</h2></Link> 
+            <div className='flex items-center relative max-sm:hidden max-md:block max-lg:block'>
+                <input type="text" placeholder='Search for events here' className='bg-zinc-100 p-3 px-5 w-100 rounded-3xl outline-none text-sm max-md:w-96 max-lg:w-96'/>
                 <FiSearch   className='absolute top-3 right-8 text-xl text-zinc-400'/>
             </div>
         </div>
 
-        <div className='flex gap-8 items-center max-sm:gap-4 ml-auto'>
-            <div className='flex gap-3 bg-zinc-100 p-3 px-6 rounded-3xl max-sm:hidden '>
+        <div className='flex gap-8 items-center max-sm:gap-4 ml-auto max-md:gap-4'>
+            <div className='flex gap-3 bg-zinc-100 p-3 px-6 rounded-3xl max-sm:hidden max-md:hidden max-lg:hidden'>
                 <img src={flag} alt="" className='w-6 h-6 max-sm:w-full ' />
                 <p className='text-sm max-sm:hidden'>Nigeria</p>
             </div>
 
             
             <div onClick={handleOpenSearch}>
-                <FiSearch className='hidden max-sm:text-xl max-sm:block'/>
+                <FiSearch className='hidden max-sm:text-xl max-sm:block '/>
             </div>
 
             {openSearch && (
@@ -103,16 +103,16 @@ const Navbar = ({ isOpen, toggleMenu }) => {
         
 
 
-            <img src={flag} alt="" className='hidden w-5 h-5 max-sm:w-full max-sm:block' />
+            <img src={flag} alt="" className='hidden w-5 h-5 max-sm:w-full max-sm:block max-md:block max-lg:block' />
 
             <div className='flex gap-2 items-center bg-zinc-100 p-3 px-6 rounded-3xl cursor-pointer max-sm:px-2 max-sm:p-2' onClick={openModal1}>
                 <IoMdNotificationsOutline  className='text-xl max-sm:text-sm'/>
-                <p className='text-sm max-sm:hidden'>Notifications</p>
+                <p className='text-sm max-sm:hidden max-md:hidden max-lg:hidden'>Notifications</p>
             </div>
 
             <div className='flex items-center gap-5 border-l-2 pl-3 cursor-pointer max-sm:hidden' onClick={openModal}>
                 <img src={proImage} alt="" className='w-8 h-8'/>
-                <p className='flex items-center text-sm max-sm:hidden'>algoname <FaCaretDown /></p>
+                <p className='flex items-center text-sm max-sm:hidden max-md:hidden max-lg:hidden'>algoname <FaCaretDown /></p>
             </div>
             <img src={proImage} alt="" className='hidden w-7 h-7 max-sm:block' onClick={openModal}/>
 

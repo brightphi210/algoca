@@ -203,14 +203,14 @@ const CreateBody = () => {
                             <div>
                               <p className='text-sm text-zinc-400 pb-2 max-sm:text-xs'>Minutes:</p>
                               <select className="select select-bordered max-sm:text-xs max-sm:h-10 max-sm:min-h-fit">
-                                <option  className='max-sm:text-xs'>10</option>
-                                <option  className='max-sm:text-xs'>15</option>
-                                <option  className='max-sm:text-xs'>20</option>
-                                <option  className='max-sm:text-xs'>25</option>
-                                <option  className='max-sm:text-xs'>30</option>
-                                <option  className='max-sm:text-xs'>35</option>
-                                <option  className='max-sm:text-xs'>40</option>
-                              </select>
+                              <option  className='max-sm:text-xs'>10</option>
+                              <option  className='max-sm:text-xs'>15</option>
+                              <option  className='max-sm:text-xs'>20</option>
+                              <option  className='max-sm:text-xs'>25</option>
+                              <option  className='max-sm:text-xs'>30</option>
+                              <option  className='max-sm:text-xs'>35</option>
+                              <option  className='max-sm:text-xs'>40</option>
+                            </select>
                               {/* <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/> */}
                             </div>
                         </div>
