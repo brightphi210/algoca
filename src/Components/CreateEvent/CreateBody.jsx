@@ -123,7 +123,17 @@ const CreateBody = () => {
                       <div>
                         <p className='text-sm text-zinc-400 pb-2 max-sm:text-xs'>Hours:</p>
                         <div className='flex items-center gap-3'>
-                          <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/>
+                          <select className="select select-bordered max-sm:text-xs max-sm:h-10 max-sm:min-h-fit">
+                              <option  className='max-sm:text-xs'>1</option>
+                              <option  className='max-sm:text-xs'>2</option>
+                              <option  className='max-sm:text-xs'>3</option>
+                              <option  className='max-sm:text-xs'>4</option>
+                              <option  className='max-sm:text-xs'>5</option>
+                              <option  className='max-sm:text-xs'>6</option>
+                              <option  className='max-sm:text-xs'>7</option>
+                              <option  className='max-sm:text-xs'>8</option>
+                            </select>
+                          {/* <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/> */}
                           <div>:</div>
                         </div>
                       </div>
@@ -132,7 +142,16 @@ const CreateBody = () => {
                       <div>
                         <p className='text-sm text-zinc-400 pb-2 max-sm:text-xs'>Mins:</p>
                         <div className='flex items-center gap-3'>
-                          <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/>
+                          <select className="select select-bordered max-sm:text-xs max-sm:h-10 max-sm:min-h-fit">
+                            <option  className='max-sm:text-xs'>10</option>
+                            <option  className='max-sm:text-xs'>15</option>
+                            <option  className='max-sm:text-xs'>20</option>
+                            <option  className='max-sm:text-xs'>25</option>
+                            <option  className='max-sm:text-xs'>30</option>
+                            <option  className='max-sm:text-xs'>35</option>
+                            <option  className='max-sm:text-xs'>40</option>
+                          </select>
+                          {/* <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/> */}
                           <div>:</div>
                         </div>
                       </div>
@@ -156,17 +175,43 @@ const CreateBody = () => {
                           <div className="flex gap-4">
                             <div>
                               <p className='text-sm text-zinc-400 pb-2 max-sm:text-xs'>Days:</p>
-                              <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/>
+                              <select className="select select-bordered max-sm:text-xs max-sm:h-10 max-sm:min-h-fit">
+                              <option  className='max-sm:text-xs'>1</option>
+                              <option  className='max-sm:text-xs'>2</option>
+                              <option  className='max-sm:text-xs'>3</option>
+                              <option  className='max-sm:text-xs'>4</option>
+                              <option  className='max-sm:text-xs'>5</option>
+                            </select>
+                              {/* <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/> */}
                             </div>
 
                             <div>
                               <p className='text-sm text-zinc-400 pb-2 max-sm:text-xs'>Hours:</p>
-                              <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/>
+                              <select className="select select-bordered max-sm:text-xs max-sm:h-10 max-sm:min-h-fit">
+                              <option  className='max-sm:text-xs'>1</option>
+                              <option  className='max-sm:text-xs'>2</option>
+                              <option  className='max-sm:text-xs'>3</option>
+                              <option  className='max-sm:text-xs'>4</option>
+                              <option  className='max-sm:text-xs'>5</option>
+                              <option  className='max-sm:text-xs'>6</option>
+                              <option  className='max-sm:text-xs'>7</option>
+                              <option  className='max-sm:text-xs'>8</option>
+                            </select>
+                              {/* <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/> */}
                             </div>
 
                             <div>
                               <p className='text-sm text-zinc-400 pb-2 max-sm:text-xs'>Minutes:</p>
-                              <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/>
+                              <select className="select select-bordered max-sm:text-xs max-sm:h-10 max-sm:min-h-fit">
+                                <option  className='max-sm:text-xs'>10</option>
+                                <option  className='max-sm:text-xs'>15</option>
+                                <option  className='max-sm:text-xs'>20</option>
+                                <option  className='max-sm:text-xs'>25</option>
+                                <option  className='max-sm:text-xs'>30</option>
+                                <option  className='max-sm:text-xs'>35</option>
+                                <option  className='max-sm:text-xs'>40</option>
+                              </select>
+                              {/* <input type="text" placeholder='00' className='w-14 max-sm:w-16 max-sm:text-xs rounded-lg border border-zinc-300 p-3 px gap-2-4 outline-none'/> */}
                             </div>
                         </div>
                       </div>
