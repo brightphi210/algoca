@@ -67,7 +67,7 @@ const ServicesBody = () => {
                 <input type="text" placeholder="Search FAQs here" className="input input-bordered w-full max-w-full max-sm:text-sm" />
 
                 <div className='pt-5'>
-                  <p className='text-sm font-semibold'>What Can I Use Algocal For?</p>
+                  <p className='text-sm font-semibold max-sm:text-xs'>What Can I Use Algocal For?</p>
                   <p className='text-xs pt-3 text-justify text-zinc-500'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
                     aliquam erat volutpat. Ut wisi ...
@@ -75,7 +75,7 @@ const ServicesBody = () => {
                 </div>
 
                 <div className='pt-5'>
-                  <p className='text-sm font-semibold'>What Can I Use Algocal For?</p>
+                  <p className='text-sm font-semibold max-sm:text-xs'>What Can I Use Algocal For?</p>
                   <p className='text-xs pt-3 text-justify text-zinc-500'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
                     aliquam erat volutpat. Ut wisi ...
@@ -83,7 +83,7 @@ const ServicesBody = () => {
                 </div>
 
                 <div className='pt-5'>
-                  <p className='text-sm font-semibold'>What Can I Use Algocal For?</p>
+                  <p className='text-sm font-semibold max-sm:text-xs'>What Can I Use Algocal For?</p>
                   <p className='text-xs pt-3 text-justify text-zinc-500'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
                     aliquam erat volutpat. Ut wisi ...
@@ -91,7 +91,7 @@ const ServicesBody = () => {
                 </div>
 
                 <div className='pt-5'>
-                  <p className='text-sm font-semibold'>What Can I Use Algocal For?</p>
+                  <p className='text-sm font-semibold max-sm:text-xs'>What Can I Use Algocal For?</p>
                   <p className='text-xs pt-3 text-justify text-zinc-500'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
                     aliquam erat volutpat. Ut wisi ...
@@ -99,7 +99,7 @@ const ServicesBody = () => {
                 </div>
 
                 <div className='pt-5'>
-                  <p className='text-sm font-semibold'>What Can I Use Algocal For?</p>
+                  <p className='text-sm font-semibold max-sm:text-xs'>What Can I Use Algocal For?</p>
                   <p className='text-xs pt-3 text-justify text-zinc-500'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
                     aliquam erat volutpat. Ut wisi ...
